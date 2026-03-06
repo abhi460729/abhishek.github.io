@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abhishek Freelance Services - Gujarat</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #007bff;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h2 {
+      color: #007bff;
+    }
+    .services {
+      margin: 30px 0;
+    }
+    .payment-area {
+      margin-top: 50px;
+      padding: 30px;
+      background: #e9f7ff;
+      border-radius: 10px;
+    }
+    #rzp_payment_form {
+      display: inline-block; /* button ko center karne ke liye helpful */
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Abhishek - Freelancer</h1>
+    <p>Web Development | Graphic Design | Content Writing | And More</p>
+    <p>Gujarat, India</p>
+  </header>
+
+  <div class="container">
+    <h2>Welcome to My Services</h2>
+    <p>Hi, main Abhishek hoon. Freelancing projects accept karta hoon. Payment advance ke liye neeche button use karo.</p>
+
+    <div class="services">
+      <h3>Services I Offer</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li>✔ Website / Landing Page Development - ₹2000+</li>
+        <li>✔ Logo & Banner Design - ₹800+</li>
+        <li>✔ Content Writing / Blog Posts - ₹500+</li>
+        <li>Custom projects bhi discuss kar sakte hain!</li>
+      </ul>
+    </div>
+
+    <div class="payment-area">
+      <h2>Book Your Slot Now</h2>
+      <p>Advance payment karo (₹500 ya apne hisab se) aur WhatsApp pe details bhej do. Kaam shuru kar deta hoon!</p>
+      <p>After payment, mujhe screenshot bhej dena WhatsApp pe: +91-xxxxx-xxxxx</p>
+
+      <!-- Razorpay Payment Button Yahan Load Hoga -->
+      <form id="rzp_payment_form">
+        <script src="https://checkout.razorpay.com/v1/payment-button.js" 
+                data-payment_button_id="pl_SNn0qKuHjNNGmj" 
+                async> 
+        </script>
+      </form>
+
+      <p style="margin-top: 20px; font-size: 0.9em; color: #555;">
+        Note: Yeh test mode mein hai abhi. Live hone ke baad real payments aayenge.
+      </p>
+    </div>
+
+    <p style="margin-top: 40px;">
+      Contact: abhishek@example.com | WhatsApp: +91-xxxxx-xxxxx | LinkedIn: /in/abhishek-freelancer
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Abhishek Freelance. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
